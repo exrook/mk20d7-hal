@@ -1,0 +1,17 @@
+[package]
+name = "mk20d7-hal"
+version = "0.1.0"
+authors = ["Jacob Hughes <j@jacobhughes.me>"]
+
+[dependencies]
+cortex-m = "0.4.0"
+embedded-hal = "0.1.0"
+nb = "0.1.0"
+mk20d7 = { path = "../mk20d7" }
+
+[dependencies.cast]
+default-features = false
+version = "0.2.2"
+
+[features]
+rt = ["mk20d7/rt"]
